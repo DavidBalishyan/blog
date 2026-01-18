@@ -1,0 +1,263 @@
+---
+---
+
+// Gruvbox Dark Color Palette
+$bg0-hard: #1d2021;
+$bg0: #282828;
+$bg1: #3c3836;
+$bg2: #504945;
+$bg3: #665c54;
+$bg4: #7c6f64;
+
+$fg0: #fbf1c7;
+$fg1: #ebdbb2;
+$fg2: #d5c4a1;
+$fg3: #bdae93;
+$fg4: #a89984;
+
+$red: #fb4934;
+$green: #b8bb26;
+$yellow: #fabd2f;
+$blue: #83a598;
+$purple: #d3869b;
+$aqua: #8ec07c;
+$orange: #fe8019;
+
+// Minima Overrides
+// Use softer/calmer colors for brand and titles
+$brand-color:       $fg1; 
+$brand-color-light: $fg4;
+$brand-color-dark:  $fg1;
+
+$site-title-color:  $fg1;
+
+$text-color:        $fg1;
+$background-color:  $bg0;
+$code-background-color: $bg1;
+
+// Use Blue for links as it is calm, avoid purple for visited to keep it uniform
+$link-base-color:   $blue;
+$link-visited-color: $blue;
+$link-hover-color:  $aqua;
+
+$border-color-01:   $bg2;
+$border-color-02:   $bg3;
+$border-color-03:   $bg4;
+
+$table-text-color:  $fg1;
+$table-header-bg-color: $bg1;
+$table-header-border: $bg3;
+$table-border-color: $bg2;
+
+@import "minima";
+
+// Further Customizations for Minimalism
+
+// Smooth Scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Fade In Animation
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+// Link Transitions
+a {
+  transition: color 0.1s ease, border-color 0.1s ease;
+}
+
+body {
+    background-color: $background-color;
+    color: $text-color;
+
+    // Hide scrollbar for Chrome, Safari and Opera
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    // Hide scrollbar for IE, Edge and Firefox
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+// Headers - Use fg0 (bright text) instead of yellow for a cleaner look
+h1, h2, h3, h4, h5, h6 {
+  color: $fg0;
+}
+
+// Code blocks
+pre, code {
+  background-color: $bg1;
+  border: 1px solid $bg2; // Softer border
+  color: $fg1;
+}
+
+.highlight, .highlighter-rouge .highlight {
+    background-color: $bg1;
+}
+
+// Site header
+.site-header {
+  background-color: $bg0-hard;
+  border-top: none; // Remove bold orange top border
+  border-bottom: 1px solid $bg2; // Softer bottom border
+}
+
+.site-title {
+  color: $fg0 !important; // Brighter text for title but not orange
+  &:visited {
+    color: $fg0 !important;
+  }
+}
+
+.site-nav .page-link {
+  color: $fg1;
+  &:hover {
+    color: $aqua;
+  }
+}
+
+
+.page-content {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+// Post content
+.post-title {
+  color: $fg0; // Clean bright text
+}
+
+.post-meta {
+  color: $fg4;
+}
+
+.post-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: $fg0;
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: $bg0-hard;
+  border-top: 1px solid $bg2;
+  color: $fg4;
+}
+
+.footer-heading {
+  color: $fg2;
+}
+
+// Blockquotes
+blockquote {
+  color: $fg3;
+  border-left: 4px solid $bg2; // Softer border
+}
+
+// Tables
+table {
+  thead {
+    background-color: $bg1;
+    border: 1px solid $bg2;
+    th {
+      color: $fg0;
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid $bg2;
+    }
+  }
+}
+
+// Syntax Highlighting Overrides for Gruvbox
+.highlight {
+  .c { color: $fg4; } // Comment
+  .err { color: $red; } // Error
+  .k { color: $red; } // Keyword
+  .o { color: $fg1; } // Operator
+  .cm { color: $fg4; } // Comment.Multiline
+  .cp { color: $aqua; } // Comment.Preproc
+  .c1 { color: $fg4; } // Comment.Single
+  .cs { color: $fg4; } // Comment.Special
+  .gd { color: $red; } // Generic.Deleted
+  .gd .x { color: $red; } // Generic.Deleted.Specific
+  .ge { font-style: italic; } // Generic.Emph
+  .gr { color: $red; } // Generic.Error
+  .gh { color: $yellow; } // Generic.Heading
+  .gi { color: $green; } // Generic.Inserted
+  .gi .x { color: $green; } // Generic.Inserted.Specific
+  .go { color: $fg4; } // Generic.Output
+  .gp { color: $fg4; } // Generic.Prompt
+  .gs { font-weight: bold; } // Generic.Strong
+  .gu { color: $yellow; } // Generic.Subheading
+  .gt { color: $red; } // Generic.Traceback
+  .kc { color: $purple; } // Keyword.Constant
+  .kd { color: $red; } // Keyword.Declaration
+  .kp { color: $red; } // Keyword.Pseudo
+  .kr { color: $red; } // Keyword.Reserved
+  .kt { color: $yellow; } // Keyword.Type
+  .m { color: $purple; } // Literal.Number
+  .s { color: $green; } // Literal.String
+  .na { color: $blue; } // Name.Attribute
+  .nb { color: $yellow; } // Name.Builtin
+  .nc { color: $yellow; } // Name.Class
+  .no { color: $purple; } // Name.Constant
+  .ni { color: $purple; } // Name.Entity
+  .ne { color: $yellow; } // Name.Exception
+  .nf { color: $aqua; } // Name.Function
+  .nn { color: $yellow; } // Name.Namespace
+  .nt { color: $blue; } // Name.Tag
+  .nv { color: $blue; } // Name.Variable
+  .ow { color: $red; } // Operator.Word
+  .w { color: $fg1; } // Text.Whitespace
+  .mf { color: $purple; } // Literal.Number.Float
+  .mh { color: $purple; } // Literal.Number.Hex
+  .mi { color: $purple; } // Literal.Number.Integer
+  .mo { color: $purple; } // Literal.Number.Oct
+  .sb { color: $green; } // Literal.String.Backtick
+  .sc { color: $green; } // Literal.String.Char
+  .sd { color: $green; } // Literal.String.Doc
+  .s2 { color: $green; } // Literal.String.Double
+  .se { color: $orange; } // Literal.String.Escape
+  .sh { color: $green; } // Literal.String.Heredoc
+  .si { color: $orange; } // Literal.String.Interpol
+  .sx { color: $green; } // Literal.String.Other
+  .sr { color: $green; } // Literal.String.Regex
+  .s1 { color: $green; } // Literal.String.Single
+  .ss { color: $blue; } // Literal.String.Symbol
+  .bp { color: $yellow; } // Name.Builtin.Pseudo
+  .vc { color: $blue; } // Name.Variable.Class
+  .vg { color: $blue; } // Name.Variable.Global
+  .vi { color: $blue; } // Name.Variable.Instance
+  .il { color: $purple; } // Literal.Number.Integer.Long
+}
+
+// Table Styles for Gruvbox
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: transparent; // Ensure no white bg
+
+  th, td {
+    padding: 10px;
+    border: 1px solid $bg2; // Subtle border
+    background-color: transparent; // Override specific cell bg
+  }
+
+  th {
+    background-color: $bg2; // Header bg
+    color: $fg0;
+    font-weight: bold;
+  }
+
+  // Override Minima's zebra striping if present
+  tbody tr:nth-child(odd) td,
+  tbody tr:nth-child(odd) th {
+    background-color: transparent;
+  }
+}

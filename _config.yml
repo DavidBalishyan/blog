@@ -1,0 +1,11 @@
+title: David's Blog
+email: davidbalishyan12@gmail.com
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://davidbalishyan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: David4613897512
+github_username: DavidBalishyan
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed

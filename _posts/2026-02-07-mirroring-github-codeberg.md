@@ -4,6 +4,7 @@ title: "Auto-Syncing My Repos from GitHub to Codeberg"
 date: 2026-02-08 21:44:00 +0400
 categories: [git, automation]
 tags: [github, codeberg, github-actions, ci-cd]
+published: true
 ---
 
 So I recently decided to start mirroring my GitHub repos to Codeberg. Why? Honestly, I just don't love the idea of having all my code in one place. Plus, I wanted to support a platform that's actually community-driven and cares about open source.

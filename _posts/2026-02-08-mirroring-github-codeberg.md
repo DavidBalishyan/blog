@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Auto-Syncing My Repos from GitHub to Codeberg"
-date: 2026-02-08 21:44:00 +0400
+date: 2026-02-08 14:04:00 +0400
 categories: [git, automation]
 tags: [github, codeberg, github-actions, ci-cd]
 published: true

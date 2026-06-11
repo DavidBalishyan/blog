@@ -180,7 +180,9 @@ table {
 // Syntax Highlighting Overrides for Gruvbox
 .highlight {
   .c { color: $fg4; } // Comment
-  .err { color: $red; } // Error
+  .err { color: $red; background-color: transparent; } // Error
+  .nl { color: $aqua; } // Name.Label
+  .p { color: $fg1; } // Punctuation
   .k { color: $red; } // Keyword
   .o { color: $fg1; } // Operator
   .cm { color: $fg4; } // Comment.Multiline

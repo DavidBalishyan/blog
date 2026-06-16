@@ -9,3 +9,9 @@ github_username: DavidBalishyan
 theme: minima
 plugins:
   - jekyll-feed
+
+sass:
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions

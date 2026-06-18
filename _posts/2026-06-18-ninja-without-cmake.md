@@ -146,4 +146,4 @@ For a project this size, Make is perfectly fine. The Ninja setup is more steps (
 
 If the project grew to 50+ translation units, I'd switch to the generator+Ninja setup for real. For six files? Make is simpler and good enough. But having both available doesn't hurt - they produce the same binary, and you can use whichever you prefer.
 
-The generators are up on [GitHub](https://github.com/DavidBalishyan/cboomer/tree/master/scripts/experimental) if you want to poke around.
+The generators are up on [GitHub](https://github.com/DavidBalishyan/cboomer/tree/main/scripts/experimental) if you want to poke around.

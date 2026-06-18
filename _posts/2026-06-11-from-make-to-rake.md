@@ -220,4 +220,4 @@ The biggest practical win is `rake -T` - I can discover available commands witho
 
 If you're running a Jekyll site or any Ruby project with a Makefile, the switch is painless and takes maybe five minutes. Your `Makefile` and `Rakefile` can even live side by side while you transition, since they don't conflict.
 
-The full Rakefile is [up on GitHub](https://github.com/DavidBalishyan/blog) if you want to check it out.
+The full Rakefile is [up on GitHub](https://github.com/DavidBalishyan/blog/blob/main/Rakefile) if you want to check it out.

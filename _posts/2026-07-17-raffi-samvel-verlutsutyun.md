@@ -7,4 +7,6 @@ tags: []
 published: true
 ---
 
-**TODO: Add content here**
+Read the actual book [here](https://davidbalishyan.github.io/raffi-samvel.pdf)
+
+*Actual contents comming soon...*

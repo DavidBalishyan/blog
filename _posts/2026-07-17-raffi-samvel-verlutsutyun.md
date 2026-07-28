@@ -7,9 +7,7 @@ tags: []
 published: true
 ---
 
-Read the actual book [here](https://davidbalishyan.github.io/raffi-samvel.pdf)
-
-# Րաֆֆու «Սամվել» պատմավեպի վերլուծությունը
+Կարդացեք գիրքն [այստեղ](https://davidbalishyan.github.io/raffi-samvel.pdf)
 
 ## Ներածություն
 

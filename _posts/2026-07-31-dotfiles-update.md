@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Dotfiles, Six Months Later"
-date: 2026-07-31 12:00:00 +0400
+date: 2026-07-31 9:00:00 +0400
 categories: [linux]
 tags: [dotfiles, bspwm, neovim, zsh, debian]
 published: true

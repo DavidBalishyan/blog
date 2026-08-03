@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Րաֆֆու «Սամվել» պատմավեպի վերլուծությունը"
+title: "Րաֆֆու «Սամվել» պատմավեպի վերլուծությունը. Analysis of Raffi's historical novel \"Samvel\""
 date: 2026-07-28 12:00:00 +0400
 categories: []
 tags: []
